@@ -48,6 +48,15 @@ button:hover {
   border-color: #646cff;
 }
 
+/* Accessible focus styles: visible only when navigating with keyboard */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 3px solid #ffb74d; /* warm visible outline for keyboard focus */
+  outline-offset: 2px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

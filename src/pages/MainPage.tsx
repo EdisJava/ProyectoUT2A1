@@ -7,7 +7,7 @@ const MainPage: FC = () => {
 	return (
 		<div style={{display:'flex', minHeight:'100vh', flexDirection:'column'}}>
 					<Encabezado />
-			<main style={{flex:1, padding: '2rem'}}>
+			<main role="main" aria-labelledby="app-title" style={{flex:1, padding: '2rem'}}>
 				<Login />
 			</main>
 					<Pie />
