@@ -1,10 +1,13 @@
 import './App.css'
-import MainPage from './pages/MainPage'
+import { ProveedorTema } from './Temas/ProveedorTema'
+import { ProveedorRutas } from './router/enrutador'
 
 function App() {
   return (
-    <MainPage />
-  );
+    <ProveedorTema>
+      <ProveedorRutas />
+    </ProveedorTema>
+  )
 }
 
 export default App
