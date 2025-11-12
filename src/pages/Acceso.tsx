@@ -20,7 +20,7 @@ export default function Acceso(){
 		// Validación de ejemplo: usuario/clave 'admin' -> acceso correcto
 		if (usuario === 'admin' && clave === 'admin') {
 			setError(null)
-			navegar('/panel')
+			navegar('/login') // Redirigir a la página de login
 		} else {
 			setError('Credenciales inválidas. Usa usuario: admin, clave: admin para el ejemplo.')
 		}
