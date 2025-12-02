@@ -19,6 +19,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import LogoutIcon from '@mui/icons-material/Logout';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import PersonIcon from '@mui/icons-material/Person';
 import { authActions } from '../store/authSlice';
 
 const Menu = () => {
@@ -97,6 +99,7 @@ const Menu = () => {
           {userData.isAutenticated && (
             <Typography variant="body1" sx={{ mr: 2 }}>
               {userData.userName} ({userData.userRol})
+              {userData.userRol === 'admin' ? <AdminPanelSettingsIcon sx={{ ml: 1 }} /> : <PersonIcon sx={{ ml: 1 }} />}
             </Typography>
           )}
         </Toolbar>

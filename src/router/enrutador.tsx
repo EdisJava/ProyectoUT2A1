@@ -5,8 +5,8 @@ import Panel from '../pages/Panel'
 import Estadisticas from '../pages/Estadisticas'
 import PaginaError from '../pages/PaginaError'
 import Home from '../pages/Home'
-import Reports from '../pages/Reports'
-import {Login} from '../pages/Login'
+import Reports from '../components/Reports'
+import { Login } from '../pages/Login'
 //poder navegar por url
 const rutas = createBrowserRouter([
 	{ path: '/', element: <Navigate to="/acceso" replace />, errorElement: <PaginaError /> },
@@ -25,7 +25,7 @@ const rutas = createBrowserRouter([
 	{ path: '/reports', element: <Reports />, errorElement: <PaginaError /> }*/
 ])
 
-export function ProveedorRutas(){
+export function ProveedorRutas() {
 	return <RouterProvider router={rutas} />
 }
 

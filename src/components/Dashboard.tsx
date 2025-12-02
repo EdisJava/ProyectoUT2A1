@@ -14,6 +14,7 @@ import {
   IconButton,
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { useSelector } from 'react-redux';
 
 interface ItemType {
   id?: number;
@@ -33,6 +34,7 @@ const itemInitialState: ItemType = {
 const Dashboard = () => {
   const [item, setItem] = useState<ItemType>(itemInitialState);
   const [tableData, setTableData] = useState<ItemType[]>([]);
+  const userData = useSelector((state: any) => state.authenticator);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
